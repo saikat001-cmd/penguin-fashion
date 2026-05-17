@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 <style>
 .bebas-neue-regular {
   font-family: "Bebas Neue", sans-serif;
@@ -22,11 +24,30 @@
 <body class="font-roboto ">
    <header class="bg-[#FFFBF0] pl-4">
     <!-- nav bar start -->
-    <nav>
+    <!-- navbar -->
+    <nav class="flex items-center justify-between lg:justify-around py-8 px-2 lg:px-64">
 
-    </nav>
+    <!-- Logo -->
+    <div class="lg:flex-1">
+        <img class="w-56 lg:w-64" src="icons/logo.png" alt="logo">
+    </div>
+
+    <!-- menu -->
+    <ul class="hidden md:flex items-center gap-8 text-[#363958] font-medium">
+        <li><a href="#" class="hover:text-[#8BC34A]">Home</a></li>
+        <li><a href="#" class="hover:text-[#8BC34A]">Product</a></li>
+        <li><a href="#" class="hover:text-[#8BC34A]">About us</a></li>
+        <li><a href="#" class="hover:text-[#8BC34A]">Contact us</a></li>
+    </ul>
+
+    <!-- mobile menu icon -->
+    <div class="md:hidden text-2xl text-[#363958]">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+</nav>
     <!-- banner start -->
-    <div class="lg:flex md:flex md:items-center md:justify-around">
+    <div class="lg:flex md:flex md:items-center md:justify-around ">
         <div class="space-y-4">
             <h1 class="text-7xl uppercase bebas-neue-regular">
                 <span class="text-orange-300">Be the Penguins </span>
